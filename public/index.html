@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>Maknyus - Kenali Makanan Indonesia</title>
+</head>
+
+<body class="font-sans">
+
+    <!-- Navbar -->
+    <nav role="navigation" class="flex justify-between px-6 md:justify-between items-center py-2 font-medium"
+        style="background-color: #ee5253;">
+        <div class="flex items-center md:pl-12">
+            <a href="#"><img src="assets/img/logo.png" alt="maknyus" class="w-16"></a>
+            <div class="text-white pl-12 hidden lg:block">
+                <a href="#" class="px-2">Beranda</a>
+                <a href="#" class="px-2">Daftar Makanan</a>
+                <a href="#" class="px-2">Rekomendasi</a>
+                <a href="#" class="px-2">Tentang</a>
+            </div>
+        </div>
+        <div class="md:pr-12 hidden lg:block">
+            <div class="relative rounded-xl shadow-sm">
+                <div class="absolute inset-y-0 left-0 pl-2 flex items-center pointer-events-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="gray">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <input type="text" name="makanan" id="search"
+                    class="focus:ring-gray-500 focus:border-gray-500 block w-full pl-7 pr-16 sm:text-sm border-gray-300 rounded-3xl"
+                    placeholder="Cari Makanan Tradisional">
+            </div>
+        </div>
+        <a href="#" class="lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </a>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="grid justify-items-center md:flex items-center md:justify-around p-16 h-auto"
+        style="background-color: #ee5253;">
+        <div class="text-white md:px-10">
+            <p class="font-bold text-4xl lg:text-5xl text-center md:text-left mb-2">Mengenal Makanan Tradisional Khas
+                Indonesia</p>
+            <p class="text-yellow-200 md:text-lg text-justify mb-6 lg:mb-0">Maknyus merupakan sebuah situs yang
+                menyediakan informasi-informasi makanan tradisional khas Indonesia. Kenali asal kota, resep, dan
+                sebagainya tentang makanan tersebut</p>
+        </div>
+        <img src="assets/img/vect_breakfast.svg" class="w-96 md:w-80 lg:w-96">
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#ee5253" fill-opacity="1"
+            d="M0,96L80,117.3C160,139,320,181,480,176C640,171,800,117,960,96C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+        </path>
+    </svg>
+
+    <!-- Intro -->
+    <div data-aos="fade-up"  class="md:flex items-center justify-evenly grid my-36">
+        <div class="grid justify-items-center w-72 mb-8">
+            <div class="rounded-full h-32 w-32 flex items-center justify-center shadow-lg"
+                style="background-color: #feca57;">
+                <img src="assets/img/snap.svg" width="80px">
+            </div>
+            <p class="text-lg font-bold mt-4">Mudah diakses</p>
+            <p class="text-md text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore</p>
+        </div>
+
+        <div class="grid justify-items-center w-72 mb-8">
+            <div class="rounded-full h-32 w-32 flex items-center justify-center shadow-lg"
+                style="background-color: #feca57;">
+                <img src="assets/img/checked.svg" width="80px">
+            </div>
+            <p class="text-lg font-bold mt-4">Data Terverifikasi</p>
+            <p class="text-md text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore</p>
+        </div>
+
+        <div class="grid justify-items-center w-72 mb-8">
+            <div class="rounded-full h-32 w-32 flex items-center justify-center shadow-lg"
+                style="background-color: #feca57;">
+                <img src="assets/img/clock.svg" width="80px">
+            </div>
+            <p class="text-lg font-bold mt-4">Cepat</p>
+            <p class="text-md text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore</p>
+        </div>
+    </div>
+
+    <!-- Recommend Section -->
+    <div data-aos="fade-up" class="grid justify-items-center mt-20">
+        <p class="font-bold text-2xl pb-2 border-b-4 border-red-500 mb-12">Rekomendasi Makanan Tradisional</p>
+    </div>
+
+    <div data-aos="fade-up" class="flex justify-evenly flex-wrap h-auto mb-28 mx-4">
+        <div class="p-4 bg-gray-100 w-72 mb-auto mt-6 rounded-xl shadow-lg">
+            <div>
+                <img src="assets/img/food/ketoprak.jpg" class="rounded-3xl w-64 max-h-32">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div>
+                        <p class="font-semibold text-lg">Ketoprak</p>
+                        <p class="font-semibold text-sm text-black text-opacity-70">Cirebon</p>
+                    </div>
+                    <button class="cursor-pointer card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="#1dd1a1">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="card-detail w-64 p-2 border-t-2 border-gray-300">
+                        Ketoprak merupakan makanan khas Betawi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-gray-100 w-72 mb-auto mt-6 rounded-xl shadow-lg">
+            <div>
+                <img src="assets/img/food/ketoprak.jpg" class="rounded-3xl w-64 max-h-32">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div>
+                        <p class="font-semibold text-lg">Ketoprak</p>
+                        <p class="font-semibold text-sm text-black text-opacity-70">Cirebon</p>
+                    </div>
+                    <button class="cursor-pointer card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="#1dd1a1">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="card-detail w-64 p-2 border-t-2 border-gray-300">
+                        Ketoprak merupakan makanan khas Betawi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-gray-100 w-72 mb-auto mt-6 rounded-xl shadow-lg">
+            <div>
+                <img src="assets/img/food/ketoprak.jpg" class="rounded-3xl w-64 max-h-32">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div>
+                        <p class="font-semibold text-lg">Ketoprak</p>
+                        <p class="font-semibold text-sm text-black text-opacity-70">Cirebon</p>
+                    </div>
+                    <button class="cursor-pointer card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="#1dd1a1">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="card-detail w-64 p-2 border-t-2 border-gray-300">
+                        Ketoprak merupakan makanan khas Betawi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-gray-100 w-72 mb-auto mt-6 rounded-xl shadow-lg">
+            <div>
+                <img src="assets/img/food/ketoprak.jpg" class="rounded-3xl w-64 max-h-32">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div>
+                        <p class="font-semibold text-lg">Ketoprak</p>
+                        <p class="font-semibold text-sm text-black text-opacity-70">Cirebon</p>
+                    </div>
+                    <button class="cursor-pointer card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="#1dd1a1">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="card-detail w-64 p-2 border-t-2 border-gray-300">
+                        Ketoprak merupakan makanan khas Betawi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-gray-100 w-72 mb-auto mt-6 rounded-xl shadow-lg">
+            <div>
+                <img src="assets/img/food/ketoprak.jpg" class="rounded-3xl w-64 max-h-32">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div>
+                        <p class="font-semibold text-lg">Ketoprak</p>
+                        <p class="font-semibold text-sm text-black text-opacity-70">Cirebon</p>
+                    </div>
+                    <button class="cursor-pointer card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="#1dd1a1">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="card-detail w-64 p-2 border-t-2 border-gray-300">
+                        Ketoprak merupakan makanan khas Betawi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-gray-100 w-72 mb-auto mt-6 rounded-xl shadow-lg">
+            <div>
+                <img src="assets/img/food/ketoprak.jpg" class="rounded-3xl w-64 max-h-32">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div>
+                        <p class="font-semibold text-lg">Ketoprak</p>
+                        <p class="font-semibold text-sm text-black text-opacity-70">Cirebon</p>
+                    </div>
+                    <button class="cursor-pointer card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="#1dd1a1">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="card-detail w-64 p-2 border-t-2 border-gray-300">
+                        Ketoprak merupakan makanan khas Betawi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-4 bg-gray-100 w-72 mb-auto mt-6 rounded-xl shadow-lg">
+            <div>
+                <img src="assets/img/food/ketoprak.jpg" class="rounded-3xl w-64 max-h-32">
+                <div class="flex flex-wrap justify-between items-center">
+                    <div>
+                        <p class="font-semibold text-lg">Ketoprak</p>
+                        <p class="font-semibold text-sm text-black text-opacity-70">Cirebon</p>
+                    </div>
+                    <button class="cursor-pointer card-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="#1dd1a1">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="card-detail w-64 p-2 border-t-2 border-gray-300">
+                        Ketoprak merupakan makanan khas Betawi.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Quotes -->
+    <div  class="grid justify-items-center mt-12 py-20 my-20 bg-hero-i-like-food shadow-lg" style="background-color: #ff9f43">
+        <img data-aos="fade-up" src="assets/img/quote.svg" class="w-12">
+        <p data-aos="fade-up" class="text-white font-bold text-2xl md:text-3xl lg:text-5xl my-4">Cintailah produk-produk Indonesia</p>
+        <p data-aos="fade-up" class="text-gray-100 text-lg md:text-2xl p-1 bg-black bg-opacity-30">Anonymous</p>
+    </div>
+
+    <!-- Contact Us -->
+    <div data-aos="fade-up" class="my-32">
+        <div class="grid justify-items-center">
+            <div class="px-4 sm:px-0">
+                <img src="assets/img/vect_contact-us.svg" class="max-w-sm sm:max-w-xl">
+            </div>
+        </div>
+        <div data-aos="fade-up" class="grid justify-items-center">
+            <form action="mailto:husseinismail814@gmail.com" method="post" enctype="text/plain" class="w-full lg:px-56">
+                <div class="shadow overflow-hidden sm:rounded-md">
+                    <div class="px-4 py-5 bg-white sm:p-6">
+                        <div class="grid grid-cols-6 gap-6">
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="name" class="block text-sm font-medium text-gray-700">Nama</label>
+                                <input type="text" name="name" id="subject"
+                                    class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-3">
+                                <label for="mail" class="block text-sm font-medium text-gray-700">Alamat Email</label>
+                                <input type="text" name="mail" id="email"
+                                    class="mt-1 focus:ring-green-500 focus:border-green-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                            </div>
+
+                            <div class="col-span-6 sm:col-span-6">
+                                <label for="comment" class="block text-sm font-medium text-gray-700">
+                                    Pesan
+                                </label>
+                                <div class="mt-1">
+                                    <textarea id="about" name="comment" rows="3"
+                                        class="shadow-sm focus:ring-green-500 focus:border-green-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 py-3 bg-gray-50 text-right sm:px-6">
+                        <button type="submit"
+                            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                            Kirim
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="mt-16 py-8 grid justify-items-center" style="background-color: #222f3e;">
+        <div class="flex flex-wrap ">
+            <a href="#" class="m-4">
+                <img src="assets/img/socialmedia/facebook.svg" class="w-8">
+            </a>
+            <a href="#" class="m-4">
+                <img src="assets/img/socialmedia/instagram.svg" class="w-8">
+            </a>
+            <a href="#" class="m-4">
+                <img src="assets/img/socialmedia/twitter.svg" class="w-8">
+            </a>
+        </div>
+        <p class="font-mono text-md text-white">© 2021 Maknyus</p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
